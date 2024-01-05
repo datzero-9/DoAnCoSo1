@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@1,500&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+            background-image: url('../../img/hinhnen.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 100%;
+            background-position: 0px -100px;
+            
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+
+
+        form {
+            position: relative;
+            border: 1px solid #b2b4b7;
+            border-radius: 5px;
+            padding: 30px;
+        }
+
+        img {
+            left: 20px;
+            top: 20px;
+            object-fit: cover;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        h4 {
+            position: absolute;
+            right: 10px;
+            top: -10px;
+            font-size: 13px;
+        }
+
+        h4:hover {
+            border-bottom: 1px solid #000;
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 35px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+
+        .taikhoan,
+        .matkhau {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        label {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0px 5px;
+
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input {
+            outline: none;
+            height: 50px;
+            width: 300px;
+            border: 1px solid #a6a6a7;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: inherit;
+            color: #202124;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .taikhoan input:focus+label,
+        .matkhau input:focus+label {
+            background-color: #fff;
+            color: #1a73e8;
+            font-size: 13px;
+            font-weight: 500;
+            top: 0;
+        }
+
+        .taikhoan input:valid+label,
+        .matkhau input:valid+label {
+            background-color: #fff;
+            color: #1a73e8;
+            font-size: 13px;
+            font-weight: 500;
+            top: 0;
+
+        }
+
+        .taikhoan input:focus,
+        .matkhau input:focus {
+            border: 1px solid #1a73e8;
+        }
+
+        #bt__dangnhap {
+            background-color: #1a73e8;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        #bt__dangnhap:hover {
+            opacity: 0.6;
+        }
+
+        i {
+            font-size: 10px;
+            color: #1a73e8;
+
+        }
+
+        .link__trangweb {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        i:hover {
+            border-bottom: 1px solid #000;
+        }
+        @media (max-width:400px){
+            form {
+                padding: 5px;
+            }
+            img {
+            left: 10px;
+            top: 0px;
+            
+        }
+
+        }
+    </style>
+    <div class="content">
+
+        <form action="">
+            <img src="../../img/logo1.png" alt="">
+            <a href="dangki.html">
+                <h4>Đăng ký</h4>
+            </a>
+            <h3>Đăng nhập</h3>
+            <div class="taikhoan">
+                <input type="text" required>
+                <label for="">Tài khoản</label>
+            </div>
+            <div class="matkhau">
+                <input type="password" required>
+                <label for="">Mật khẩu</label>
+            </div>
+            <input type="submit" value="Đăng nhập" id="bt__dangnhap"><br>
+            <div class="link__trangweb">
+                <a href=""><i>Quên mật khẩu?</i></a>
+                <a href="trangChu.html"><i>Tham quan sản phẩm </i></a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

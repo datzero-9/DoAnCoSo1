@@ -1,0 +1,375 @@
+
+@media(min-width:851px) {
+    #menu__i {
+        display: none;
+    }
+
+    div.menu {
+        margin-bottom: 10px;
+    }
+
+    .hotline {
+        display: none;
+    }
+
+    .email {
+        margin-bottom: 0px;
+    }
+}
+
+/* tablet min-width  */
+
+@media (min-width:645px) and (max-width:850px) {
+    
+    .giohangs {    
+        top: 41px;
+        right: -108px;
+
+    }
+    .slide__chuyen {
+        padding-top: 130px;
+    }
+
+    .thongbao ul {
+    top: 4px;
+
+    }
+    .thongbao a i span {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+        width: 16px;
+        height: 12px;
+        position: absolute;
+        top: -9px;
+        right: -6px;
+        font-size: 12px;
+        background-color: red;
+        border: 50px;
+    }
+
+
+    .menu {
+        margin-bottom: 10px;
+    }
+
+    #menu__i {
+        display: none;
+    }
+
+    .nav__tieude {
+        padding-top: 10px;
+        height: 106px;
+    }
+
+    .nav__trai a {
+        font-size: 19px;
+    }
+
+    .nav__phai div a {
+        font-size: 18px;
+    }
+
+    .timkiem {
+        top: 50px;
+    }
+
+    .timkiem div a.a3,
+    .a4 {
+        display: none;
+        font-size: 16px;
+    }
+
+    .timkiem div a {
+        font-size: 16px;
+    }
+
+    .timkiem img {
+        top: -0.5vw;
+        left: -14vw;
+        width: 61px;
+        height: 57px;
+    }
+
+    .view__banphim,
+    .view__tainghe,
+    .view__chuot {
+        flex-wrap: wrap;
+    }
+
+    .banphim1,
+    .tainghe1,
+    .chuot1 {
+        padding: 20px;
+        margin-top: 20px;
+        width: 33%;
+
+    }
+
+    .icon__yeuthich i {
+        font-size: 20px;
+    }
+
+    .icon__giohang i {
+        font-size: 20px;
+    }
+
+    .banphim1__tieude,
+    .chuot1__tieude,
+    .tainghe1__tieude {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: rgb(239, 176, 100);
+    }
+
+    .hotline {
+        display: none;
+    }
+
+.ketthuc h4 {
+    font-size: 20px;
+}
+
+}
+
+/* phone  */
+@media(max-width:644px) {
+    .menu {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    .nav__phai {
+        display: none;
+    }
+
+    #menu__i {
+
+        display: block;
+        font-size: 20px;
+    }
+
+    .menu label {
+        top: -15px;
+        left: 0;
+        position: absolute;
+    }
+
+    .nav__tieude {
+        height: 47px;
+        padding-top: 20px;
+    }
+
+    .nav__trai {
+        position: absolute;
+        top: 18px;
+        right: 0;
+
+    }
+
+    .nav__trai a {
+        font-size: 19px;
+        margin-right: 10px;
+    }
+
+    .b__ketnoi {
+        display: none;
+    }
+
+    .timkiem {
+        top: 7px;
+        left: 0%;
+    }
+
+    .timkiem img.logo {
+        width: 42px;
+        height: 34px;
+        left: 45px;
+        top: -20px;
+    }
+
+    .timkiem input {
+        width: 204%;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: -15px;
+        margin-bottom: 20px;
+        height: 20px;
+    }
+
+    .timkiem i {
+        display: none;
+    }
+
+    .timkiem div {
+        display: none;
+    }
+
+    .slide__chuyen {
+        display: none;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    .div__view {
+        padding-top: 60px;
+    }
+
+    .view__banphim,
+    .view__tainghe,
+    .view__chuot {
+        flex-wrap: wrap;
+    }
+
+    .banphim1,
+    .tainghe1,
+    .chuot1 {
+        padding: 15px;
+        margin-top: 20px;
+        width: 242px;
+        margin: 17px 20px;
+    }
+
+    .icon__yeuthich i {
+        font-size: 20px;
+    }
+
+    .icon__giohang i {
+        font-size: 20px;
+    }
+
+    .banphim1__tieude,
+    .chuot1__tieude,
+    .tainghe1__tieude {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: rgb(239, 176, 100);
+    }
+
+    .banphim1__img img,
+    .chuot1__img img,
+    .tainghe1__img img {
+        margin-top: 1vw;
+        width: 80%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 2vw;
+    }
+
+    .ketthuc {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid #000;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ketthuc__thanhtoan {
+        display: none;
+    }
+
+    .ketthuc__diachi {
+        display: none;
+    }
+
+    .ketthuc h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ketthuc div a {
+        font-size: 3vw;
+
+    }
+
+    .ketthuc div a:hover {
+        color: #e74c3c;
+        border-bottom: 1px solid var(--b-color);
+    }
+
+    .ketthuc__chamsoc,
+    .ketthuc__diachi,
+    .ketthuc__thanhtoan {
+        border-right: 1px hidden #000;
+        padding-right: 5px;
+    }
+
+    .email a {
+        font-size: 15px;
+        padding-bottom: 0px;
+    }
+
+    .div__chat {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .boxchat {
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .boxchat__text input {
+        margin: 0;
+    }
+
+
+}
+
+@media(max-width:445px) {
+    .nav__trai {
+    right: 0;
+    }
+    .banphim1__tieude,
+    .chuot1__tieude,
+    .tainghe1__tieude {
+        font-size: 20px;   
+    }
+
+}
+
+@media(max-width:400px) {
+    .timkiem input {
+        width: 180%;
+        height: 40px;
+        position: absolute;
+        left: 100px;
+        top: -15px;
+        margin-bottom: 20px;
+        height: 20px;
+    }
+
+    .nav__trai a {
+        font-size: 15px;
+    }
+
+
+    .hotline {
+        height: 50px;
+    }
+
+    .hotline h4 {
+        font-size: 10px;
+    }
+    .boxchat {
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .boxchat__text input {
+        margin: 0;
+    }
+    
+
+
+}

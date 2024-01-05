@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+body {
+    margin: 0;
+
+}
+
+:root {
+    --a-color: #2691d9;
+    --b-color: #e74c3c;
+}
+
+.nav__tieude {
+    background-color: rgb(251, 71, 0);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.div__full {
+    background-color: rgba(0, 0, 0, .04);
+
+}
+
+div.menu {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.menu #menu__i {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+
+}
+
+.nav__trai {
+    margin-top: 1vw;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: auto;
+}
+
+.nav__phai {
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 1vw;
+    display: flex;
+    width: auto;
+}
+
+
+a:hover {
+    cursor: pointer;
+}
+.trangchu {
+    border-right: 1px solid #000;
+}
+
+.thongbao label {
+    font-size: 24px;
+    color: rgb(244, 248, 248);
+    border-right: 1px solid #000;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+
+.ul__thongbao label {
+    color: #000;
+    border: none;
+}
+
+.thongbao label:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.thongbao ul li {
+    margin: 10px;
+    color: #000;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul__thongbao label i {
+    padding-left: 213px;
+}
+
+.nav__phai a {
+    color: white;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+.nav__phai a:hover,
+.nav__trai a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav__trai a {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    /* font-size: 99%; */
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    max-width: 100%;
+    background-color: #f0ecec;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.mobile__close {
+    color: #666;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+}
+
+.mobile__menu {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.mobile__menu a:hover,
+.mobile__menu:hover {
+    color: rgb(251, 71, 0);
+    /* border-bottom: 1px solid #000; */
+}
+
+.mobile__menu a {
+    font-size: 20px;
+}
+
+.nav__input:checked~.nav__overlay {
+    display: block;
+}
+
+.nav__input:checked~.nav__mobile {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.giohang__out {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    background-color: #fff;
+
+}
+
+.giohang__out a i {
+    margin: auto 20px auto 10px;
+    font-size: 30px;
+}
+
+.giohang__out h1 {
+    margin: 0;
+    color: rgb(251, 71, 0);
+}
+
+
+a {
+
+    text-decoration: none;
+    color: #000;
+}
+
+li a {
+    font-size: 2vw;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+
+
+
+h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.thongbao {
+    position: relative;
+    border-right: 1px solid #000;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.thongbao a i {
+    position: relative;
+}
+
+.thongbao a i span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    top: -9px;
+    right: -6px;
+    font-size: 12px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.thongbao ul {
+    position: absolute;
+    width: 300px;
+    height: auto;  
+    right: -51px;
+    top: 11px;
+    padding-left: 10px;
+    display: none;
+    padding: 5px;
+    background-color: #eeeaea;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.thongbao ul a {
+
+    color: #000;
+    width: 290px;
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+.thongbao ul a:hover {
+color: #000;
+background-color: aliceblue;
+
+}
+
+.thongbao ul a img {
+    padding-bottom: 10px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+.thongbao ul a p {
+    padding-left: 20px;
+}
+
+.thongbao:hover ul {
+    display: block;
+    animation: fadeIn linear 0.5s;
+
+}
+
+.content {
+    width: 96%;
+    display: flex;
+    /* margin: 20px; */
+    background-color: #fff;
+    margin: 0px auto;
+
+}
+
+.content__thongtin {
+
+    width: 20%;
+    background-color: rgba(0, 0, 0, .04);
+    padding-left: 30px;
+
+}
+
+.content__thongbao {
+    /* background-color: #666; */
+    width: 80%;
+}
+
+.content__thongbao div button {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-top: 5px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.content__thongbao div button:hover {
+    border: 1px solid rgb(251, 71, 0);
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+
+.thongbao__sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.thongbao__sanpham:hover {
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.thongbao__sanpham img {
+
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.thongbao__sanpham div {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.thongbao__sanpham div h4 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.thongbao__sanpham input {
+    background-color: #fff;
+    width: auto;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.thongbao__sanpham input:hover {
+    border: 1px solid rgb(251, 71, 0);
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+
+.content__thongtin img {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.thongtin__taikhoancuatoi {
+    padding: 10px 0;
+}
+
+.thongtin__donmua {
+    padding: 10px 0;
+}
+
+.thongtin__thongbao {
+    padding: 10px 0 0 0;
+}
+
+.thongtin__thongbao ul {
+    padding: 10px 0px 0px 40px;
+}
+
+.thongtin__thongbao ul li {
+    padding-top: 10px;
+    list-style: none;
+}
+
+.thongtin__voucher {
+    padding: 10px 0;
+}
+
+.thongtin__xu {
+    padding: 10px 0;
+}
+
+.content__thongtin .thongtin__taikhoancuatoi:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+.content__thongtin .thongtin__donmua:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+.content__thongtin div a:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+.content__thongtin div ul li:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+} 
+.content__thongtin .thongtin__voucher:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+.content__thongtin .thongtin__Xu:hover {
+    color: rgb(251, 71, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div__chat {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2691d9;
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div__chat i {
+    font-size: 32px;
+    color: white;
+}
+
+.boxchat {
+    position: fixed;
+    bottom: 30px;
+    right: 22px;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    display: none;
+    animation: fadeIn2 linear 0.2s;
+
+
+}
+
+.boxchat__head {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--b-color);
+}
+
+.boxchat__head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+.boxchat__head h3 {
+    color: #fff;
+    padding-top: 33px;
+    padding-right: 83px;
+}
+
+.boxchat__head i {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.boxchat__content {
+    background-color: #fff;
+    border: 1px solid var(--a-color);
+}
+
+.content__title p {
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.content__loichao {
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.content__loichao img {
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: -1px 15px 15px 10px;
+
+}
+
+.content__loichao div {
+    padding: 10px 10px 10px 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--a-color);
+}
+
+.boxchat__text {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid var(--a-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxchat__text input {
+    outline: none;
+    width: 70%;
+    border: none;
+
+}
+
+.boxchat__text i {
+    width: 19%;
+    font-size: 30px;
+}
+
+.boxchat__text i:hover {
+    color: var(--a-color);
+}
+
+#chatbox__input:checked~.boxchat {
+    display: block;
+
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

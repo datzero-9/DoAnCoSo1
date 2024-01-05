@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+body {
+    margin: 0;
+
+}
+
+:root {
+    --a-color: #2691d9;
+    --b-color: #e74c3c;
+}
+
+.nav__tieude {
+    background-color: rgb(251, 71, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+}
+
+.div__full {
+    background-color: white;
+
+}
+
+div.menu {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.menu #menu__i {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+
+}
+
+.nav__trai {
+    margin-top: 1vw;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: auto;
+}
+
+.nav__phai {
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 1vw;
+    display: flex;
+    width: auto;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.trangchu {
+    border-right: 1px solid #000;
+}
+
+.thongbao {
+    position: relative;
+    border-right: 1px solid #000;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.thongbao a i {
+    position: relative;
+
+}
+
+.thongbao a i span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    top: -9px;
+    right: -6px;
+    font-size: 12px;
+    background-color: red;
+    border: 50px;
+}
+
+.thongbao ul {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: #bebcbc;
+    right: -51px;
+    top: 11px;
+    padding-left: 10px;
+    display: none;
+}
+
+.thongbao ul a {
+
+    color: #000;
+    width: 290px;
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+
+}
+.thongbao ul a:hover {
+    color: #000;
+    background-color: aliceblue;
+    
+    }
+
+.thongbao ul a img {
+    padding-bottom: 10px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.thongbao ul a p {
+   padding-left: 10px;
+   font-size: 18px;
+}
+
+.thongbao:hover ul {
+    display: block;
+    animation: fadeIn linear 0.5s;
+
+}
+
+.nav__phai a {
+    color: white;
+    padding-right: 10px;
+    font-size: 23px;
+}
+
+.nav__phai a:hover,
+.nav__trai a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav__trai a {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    /* font-size: 99%; */
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    max-width: 100%;
+    background-color: #f0ecec;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.mobile__close {
+    color: #666;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+}
+
+.mobile__menu {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.mobile__menu a:hover,
+.mobile__menu:hover {
+    color: rgb(251, 71, 0);
+    /* border-bottom: 1px solid #000; */
+}
+
+.mobile__menu a {
+    font-size: 20px;
+}
+
+.nav__input:checked~.nav__overlay {
+    display: block;
+}
+
+.nav__input:checked~.nav__mobile {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* sử lí đơn giản  */
+
+button {
+    border-radius: 15px;
+    background-color: var(--a-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    color: white;
+} */
+
+a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000;
+}
+
+li a {
+    font-size: 2vw;
+}
+
+.timkiem input {
+    margin-bottom: 10px;
+    width: 118%;
+    height: 3vw;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.timkiem .ul__giohang {
+    position: absolute;
+    right: -20vw;
+    top: -1vw;
+    animation: fadeIn2 linear 0.2s;
+}
+
+.timkiem .ul__giohang i {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+
+.timkiem .ul__giohang:hover .giohangs {
+    display: block;
+    animation: fadeIn2 linear 0.4s;
+}
+
+.giohangs {
+    background-color: #eeeaea;
+    border: 1px solid black;
+    position: absolute;
+    width: 378px;
+    height: 377px;
+    top: 41px;
+    right: -156px;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+
+.giohangs div input {
+    background-color: rgb(251, 71, 0);
+    outline: none;
+    border: none;
+    height: 35px;
+}
+.giohangs div a {
+    margin-left: 254px;
+}
+
+.giohangs div input:hover {
+    cursor: pointer;
+}
+
+th {
+    padding: 10px 10px 20px 10px;
+}
+
+td img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+}
+
+td a {
+    font-size: 20px;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.timkiem {
+    position: absolute;
+    text-align: center;
+    width: 33.33%;
+    top: 54px;
+    left: 30%;
+}
+
+.timkiem img.logo {
+    border-radius: 15vw;
+    position: absolute;
+    top: -0.5vw;
+    left: -15.5vw;
+    width: 70px;
+    height: 70px;
+}
+
+.timkiem div a {
+    font-size: 1.2vw;
+    color: rgb(244, 248, 248);
+}
+
+.timkiem div a:hover {
+    border-bottom: 1px solid white;
+}
+
+.timkiem div {
+    margin: 0px auto 5px auto;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide__chuyen {
+    padding-top: 158px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* sử lí đơn giản  */
+
+.slide__banphim a img,
+.slide__chuot a img,
+.slide__tainghe a img {
+    border-radius: 15px;
+    width: 100%;
+    height: 150px;
+    border: 4px solid black;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.slide__banphim,
+.slide__chuot,
+.slide__tainghe {
+    width: 30%;
+}
+
+.div__view {
+    width: 100%;
+}
+
+.view__banphim,
+.view__chuot,
+.view__tainghe {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.banphim1,
+.chuot1,
+.tainghe1 {
+    box-shadow: 3px 3px 5px 5px rgba(180, 180, 189, .5);
+    width: 20%;
+    height: auto;
+    background: #eeeaea;
+    border: 1px solid #000;
+    margin: auto;
+    padding: 7px;
+    border-radius: 15px;
+
+}
+
+button {
+    width: 87px;
+}
+
+
+
+.banphim1__icon,
+.chuot1__icon,
+.tainghe1__icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon__yeuthich i {
+    font-size: 2vw;
+}
+
+.icon__giohang i {
+    font-size: 2vw;
+}
+
+.banphim1__img,
+.chuot1__img,
+.tainghe1__img {
+    text-align: center;
+}
+
+.banphim1__img img,
+.chuot1__img img,
+.tainghe1__img img {
+    margin-top: 1vw;
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.banphim1__img img:hover,
+.chuot1__img img:hover,
+.tainghe1__img img:hover {
+    border: 2px solid var(--b-color);
+    cursor: pointer;
+}
+
+.banphim1__tieude,
+.chuot1__tieude,
+.tainghe1__tieude {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(239, 176, 100);
+}
+
+.banphim1__giaban,
+.chuot1__giaban,
+.tainghe1__giaban {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.banphim1__mausac,
+.chuot1__mausac,
+.tainghe1__mausac {
+    display: flex;
+}
+
+.banphim1__mausac h3,
+.chuot1__mausac h3,
+.tainghe1__mausac h3 {
+    font-size: 17px;
+}
+
+span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.banphim1__sukien,
+.chuot1__sukien,
+.tainghe1__sukien {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.banphim1__sukien button a:hover,
+.chuot1__sukien button a:hover,
+.tainghe1__sukien button a:hover {
+    color: white;
+}
+
+.ketthuc {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #000;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ketthuc h4 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.ketthuc div a {
+    font-size: 13px;
+
+}
+
+.ketthuc div {
+    padding-bottom: 1vw;
+
+}
+
+.ketthuc div a:hover {
+    color: #e74c3c;
+    border-bottom: 1px solid var(--b-color);
+}
+
+.ketthuc__thanhtoan a img {
+    width: 7vw;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: #9b3e34;
+}
+
+.ketthuc__chamsoc,
+.ketthuc__diachi,
+.ketthuc__thanhtoan {
+
+    padding-right: 5px;
+}
+
+.email a {
+    font-size: 2vw;
+}
+
+
+.div__chat {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2691d9;
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.div__chat i {
+    font-size: 32px;
+    color: white;
+}
+
+.boxchat {
+    position: fixed;
+    bottom: 30px;
+    right: 22px;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    display: none;
+    animation: fadeIn2 linear 0.2s;
+
+
+}
+
+.boxchat__head {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--b-color);
+}
+
+.boxchat__head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+.boxchat__head h3 {
+    color: #fff;
+    padding-top: 33px;
+    padding-right: 83px;
+}
+
+.boxchat__head i {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.boxchat__content {
+    background-color: #fff;
+    border: 1px solid var(--a-color);
+}
+
+.content__title p {
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.content__loichao {
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.content__loichao img {
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: -1px 15px 15px 10px;
+
+}
+
+.content__loichao div {
+    padding: 10px 10px 10px 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--a-color);
+}
+
+.boxchat__text {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid var(--a-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxchat__text input {
+    outline: none;
+    width: 70%;
+    border: none;
+
+}
+
+.boxchat__text i {
+    width: 19%;
+    font-size: 30px;
+}
+
+.boxchat__text i:hover {
+    color: var(--a-color);
+}
+
+#chatbox__input:checked~.boxchat {
+    display: block;
+
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

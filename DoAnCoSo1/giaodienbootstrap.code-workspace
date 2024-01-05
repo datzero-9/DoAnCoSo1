@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "giaodienbootstrap",
+			"path": "../../../giaodienbootstrap"
+		},
+		{
+			"name": "DO-AN-CO-SO",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DO-AN-CO-SO"
+	}
+}
